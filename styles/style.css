@@ -1,0 +1,248 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #111;
+	--color-background: #eee;
+	--Raboblauw: #020270;
+	--Rabooranje: #FF6600;
+	--linkgrijs: #515151;
+	--heading: hsl(219deg, 100%, 50%);
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+	font-family: "myriad-pro", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	margin: auto;
+	
+}
+
+img {
+	max-width: 100%;
+}
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+header{
+	margin: auto;
+}
+
+header section ul{
+	display: flex;
+	background-color: rgb(233, 233, 233);
+	gap: 1em;
+	padding: 0.5em;
+	margin-top: 0%;
+}
+header section ul a{
+	font-style: italic;
+	color: var(--linkgrijs)
+	
+}
+.bold{
+	font-weight: 800;
+}
+
+header img{
+	width: 188px;
+	height: 35.5px;
+	margin-left: 10px;
+}
+
+header ul{
+	display: flex;
+	justify-content: flex-start;
+	gap: 2em;
+	padding: 0.5em;
+}
+header a{
+	color: var(--linkgrijs);
+}
+
+.Headerimg{
+	height: auto;
+	width: auto;
+	height: 140px;
+	margin: auto;
+}
+header article{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: var(--Raboblauw);
+	margin-left: 1em;
+	margin-right: 1em;
+	transform: translateY(-2em);
+}
+header article h1{
+	font-weight: 100;
+	font-style: italic;
+	font-size: 2em;
+	margin: 0%;
+	padding: 10px;
+}
+header article h2{
+	font-weight: 100;
+	font-style: italic;
+	font-size: 1.5em;
+	margin: 0%;
+	padding: 10px;
+}
+
+header button{
+	background-color: var(--Rabooranje);
+	font-weight: 700;
+	font-size: 110%;
+	padding: 12px 24px;
+	border: 0;
+	border-radius: 5px;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+header button a{
+	color: white;
+}
+
+.socialmedia {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	height: 12em;
+	width: 12em;
+}
+
+main section h2{
+	color: var(--heading);
+	font-weight: 100;
+	font-style: italic;
+	font-size: 1.5em;
+	padding: 0px 12px;
+
+}
+main article h2{
+	color: var(--heading);
+	font-weight: 100;
+	font-style: italic;
+	font-size: 1.5em;
+	padding: 0px 12px;
+}
+main article ul{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+main article ul li{
+	flex-basis: 13em;
+	color: var(--heading);
+	font-style: italic;
+	
+}
+
+main article ul li h3{
+	font-weight: 100;
+}
+
+main h1{
+	color: var(--heading);
+	font-weight: 200;
+	font-style: italic;
+	font-size: 2em;
+	padding: 0px 12px;
+}
+main p{
+	margin-left: 1em;
+	line-height: 1.5em;
+	font-weight: 400;
+	
+}
+
+.blauwvak{
+	background-color: var(--Raboblauw);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 16px 24px 24px;
+	gap: 10px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.blauwvak h2{
+	color: white;
+}
+.blauwvak p{
+	color: white;
+}
+.blauwvak button{
+	border: 0;
+	border-radius: 5px;
+	font-size: 120%;
+	font-weight: 600;
+	padding: 0.5em 3em;
+	
+}
+.blauwvak button a{
+	color: var(--Raboblauw);
+}
+#button2{
+	background-color:var(--Raboblauw);
+	border: solid white 1px;
+	padding: 0.5em 4.2em;
+}
+
+#button2 a{
+	color: white;
+}
+
+
+
+.blokken{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	
+}
+.blokken li{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	font-size: 10px;
+	color: white;
+	border: solid black 1px;
+	background-color: #FF6600;
+	display: block;
+	padding: 2em 2em;
+}
+
+
