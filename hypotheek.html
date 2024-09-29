@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <section>
+        <nav>
             <ul>
                 <li>
                     <a class="bold" href="idk">particulieren</a>
@@ -19,11 +19,18 @@
                     <a href="idk">Bedrijven</a>
                 </li>
             </ul>
-        </section>
-        <img src="images/Rabobank-text-logo.png" alt="Rabobank logo">
+        </nav>
 
         <nav>
-            <ul>
+
+            <a href="index.html">
+                <img src="images/Rabobank-text-logo.png" alt="Rabobank logo">
+            </a>
+
+
+            <button type="button"><img id="hamburger-icon" src="./images/random-icons/hamburger.svg"
+                    alt="hamburger-icoon"></button>
+            <ul id="menuList">
                 <li>
                     <a href="idk">producten</a>
                 </li>
@@ -39,36 +46,44 @@
 
             </ul>
         </nav>
-        <img class="Headerimg" src="images/afb-header-hypotheken-jpg.avif" alt="achtergrond afbeelding header">
+        <img id="Headerimg2" src="images/afb-header-hypotheken-jpg.avif" alt="achtergrond afbeelding header">
     </header>
     <main id="mainhypotheek">
-        <h1>
-            Hypotheken
-        </h1>
-        <p>
-            Of je nu droomt van je eigen plek of groter wilt wonen. We vinden het belangrijk dat een hypotheek bij jouw
-            situatie past. Nu én in de toekomst. Daarom denken we graag met je mee. Wil je weten hoeveel je kunt lenen?
-            Bereken stap voor stap je hypotheek. Dan weet je wat voor jou de mogelijkheden zijn.
-        </p>
-        <article class="blauwvak">
-            <h2>
-                Hypotheek berekenen
-            </h2>
-            <p>
-                Bereken binnen 2 minuten je maximale
-                hypotheek of maak vrijblijvend een afspraak
-            </p>
+        <section class="ding">
+            <article>
+                <div class="terug">
+                    <img src="images/random-icons/backarrow.png" alt="back arrow icon">
+                    <a href="index.html">home</a>
+                </div>
+                <h1>
+                    Hypotheken
+                </h1>
+                <p class="tekst">
+                    Of je nu droomt van je eigen plek of groter wilt wonen. We vinden het belangrijk dat een hypotheek
+                    bij jouw
+                    situatie past. Nu én in de toekomst. Daarom denken we graag met je mee. Wil je weten hoeveel je kunt
+                    lenen?
+                    Bereken stap voor stap je hypotheek. Dan weet je wat voor jou de mogelijkheden zijn.
+                </p>
+            </article>
+            <article class="blauwvak">
+                <h2>
+                    Hypotheek berekenen
+                </h2>
+                <p>
+                    Bereken binnen 2 minuten je maximale
+                    hypotheek of maak vrijblijvend een afspraak
+                </p>
 
-            <button>
+                <button>
+                    Bereken je hypotheek
+                </button>
 
-                <a href="idk">Bereken je hypotheek</a>
-
-            </button>
-            <button id="button2">
-                <a href="idk">Afspraak maken</a>
-            </button>
-        </article>
-
+                <button id="button2">
+                    Afspraak maken
+                </button>
+            </article>
+        </section>
 
         <article>
             <h2>
@@ -103,7 +118,7 @@
             <h2>
                 Meer informatie over hypotheken
             </h2>
-            <ul class="infohypotheek">
+            <ul class="infohypotheek2">
                 <li>
                     <a href="idk">
                         <h3>
@@ -169,22 +184,27 @@
                         </p>
                     </a>
                 </li>
-            </ul>
-            <section class="inzicht">
+                <li>
+                    <section class="inzicht">
 
-                <h2>
-                    Inzicht in je hypotheek met de Rabo app
-                </h2>
-                <p>
-                    De Rabo App helpt je om financieel gezond te wonen. Met het Hypotheekoverzicht heb je direct inzicht
-                    in
-                    je hypotheekverloop. Zo zie je onder andere wat je al hebt afgelost, je openstaande schuld en je
-                    renteopslag.
-                </p>
-                <button>
-                    <a href="idk">Alles over het hypotheekoverzicht</a>
-                </button>
-            </section>
+                        <h2>
+                            Inzicht in je hypotheek met de Rabo app
+                        </h2>
+                        <p>
+                            De Rabo App helpt je om financieel gezond te wonen. Met het Hypotheekoverzicht heb je direct
+                            inzicht
+                            in
+                            je hypotheekverloop. Zo zie je onder andere wat je al hebt afgelost, je openstaande schuld
+                            en je
+                            renteopslag.
+                        </p>
+                        <button>
+                            Alles over het hypotheekoverzicht
+                        </button>
+                    </section>
+                </li>
+            </ul>
+
         </article>
         <h2>
             Inloggen Woonplanner
@@ -223,33 +243,58 @@
             </li>
         </ul>
         <article class="plaatjetekst">
-            <img src="images/plaatjes_rabo/muntjes.svg" alt="muntjes icon">
-            <h3>
-                korting op je hypotheekrente
-            </h3>
-            <p>
-                Koop je een energiezuinige woning? Of heb je een betaalrekening bij Rabo? Dan kun je in aanmerking komen
-                voor korting op je hypotheekrente.
-            </p>
-            <img src="images/plaatjes_rabo/rabohuisje.svg" alt="huis icon">
-            <h3>
-                We laten je zien dat er meer mogelijk is
-            </h3>
-            <p>
-                Onze adviseurs zetten alles op alles om een eerste woning mogelijk te maken voor jou.
-            </p>
-            <img src="images/plaatjes_rabo/rabobordspel.svg" alt="bordspel icon">
-            <h3>
-                We zorgen ervoor dat je hypotheek met jou meebeweegt
-            </h3>
-            <p>
-                Onze adviseurs begrijpen dat je hypotheek met je mee moet bewegen, daarom checken we actief of je
-                hypotheek
-                nog bij jou past.
-            </p>
+            <section>
+                <img src="images/plaatjes_rabo/muntjes.svg" alt="muntjes icon">
+                <div>
+                    <h3>
+                        korting op je hypotheekrente
+                    </h3>
+                    <p>
+                        Koop je een energiezuinige woning? Of heb je een betaalrekening bij Rabo? Dan kun je in
+                        aanmerking
+                        komen
+                        voor korting op je hypotheekrente.
+                    </p>
+                </div>
+            </section>
+            <section>
+
+                <img src="images/plaatjes_rabo/rabohuisje.svg" alt="huis icon">
+                <div>
+
+                    <h3>
+                        We laten je zien dat er meer mogelijk is
+                    </h3>
+                    <p>
+                        Onze adviseurs zetten alles op alles om een eerste woning mogelijk te maken voor jou.
+                    </p>
+                </div>
+            </section>
+            <section>
+
+                <img src="images/plaatjes_rabo/rabobordspel.svg" alt="bordspel icon">
+                <div>
+
+                    <h3>
+                        We zorgen ervoor dat je hypotheek met jou meebeweegt
+                    </h3>
+                    <p>
+                        Onze adviseurs begrijpen dat je hypotheek met je mee moet bewegen, daarom checken we actief of
+                        je
+                        hypotheek
+                        nog bij jou past.
+                    </p>
+                </div>
+            </section>
+
         </article>
         <a href="idk">Ontdek alle voordelen van een Rabobank hypotheek</a>
-        <img src="images/plaatjes_rabo/rabosleutel.svg" alt="sleutel svg">
+        <div id="sleutelposition">
+            <img id="sleutelplaatje" src="images/plaatjes_rabo/rabosleutel.svg" alt="sleutel svg">
+            <button class="oranjebutton">
+                Maak een afspraak
+            </button>
+        </div>
 
         <h2>
             Onze Adviseurs staan voor je klaar
@@ -258,32 +303,51 @@
             Benieuwd naar jouw mogelijkheden? Maak een afspraak voor een gratis oriënterend hypotheekgesprek met een
             adviseur. Dit kan waar en wanneer het jou uitkomt. Via videogesprek, telefonisch of op kantoor.
         </p>
-        <button class="oranjebutton">
-        <a href="idk">Maak een afspraak</a>
-    </button>
+        
         <article>
             <h2>
                 Woonthema's
             </h2>
-            <section>
-                <h3>
-                    Duurzaam Wonen
-                </h3>
-                <h3>
-                    Toekomstbestendig
-                </h3>
-                <h3>
-                    Samen Zelfbouwen (CPO)
-                </h3>
-            </section>
+
+            <ul id="woonthemas">
+                <li class="positionfoto">
+                    <h3>
+                        Duurzaam Wonen
+                    </h3>
+                    <img src="images/woonthema-duurzaam.webp" alt="woonthema duurzaamheid foto">
+                </li>
+                <li class="positionfoto">
+                    <img src="images/woonthema-toekomstbestendig.avif" alt="Woonthema toekomstbestendig foto">
+                    <h3>
+                        Toekomstbestendig
+                    </h3>
+                </li>
+                <li class="positionfoto">
+                    <img src="images/woonthema-Zelfbouwen.webp" alt="Woonthema zelfbouwen foto">
+                    <h3>
+                        Samen Zelfbouwen (CPO)
+                    </h3>
+                </li>
+            </ul>
+
         </article>
         <h2>
             Hulp nodig?
         </h2>
-        <a href="idk">Online klantenservice</a>
-        <a href="idk">Stel 24/7 je vraag via chat</a>
-        <a href="idk">Bel met een van onze medewerkers</a>
-        <a href="idk">vind een rabobank kantoor</a>
+        <ul class="Hulp">
+            <li>
+                <a href="idk">Online klantenservice</a>
+            </li>
+            <li>
+                <a href="idk">Stel 24/7 je vraag via chat</a>
+            </li>
+            <li>
+                <a href="idk">Bel met een van onze medewerkers</a>
+            </li>
+            <li>
+                <a href="idk">vind een rabobank kantoor</a>
+            </li>
+        </ul>
 
     </main>
     <footer>
@@ -305,20 +369,24 @@
         </nav>
         <ul class="socialmedia">
             <li>
-                <a href="idk"><img src="images/social icons/facebook-icon.jpeg" alt="Facebook-icon"></a>
+                <img src="images/social-icons/facebook-icon.jpeg" alt="Facebook-icon">
             </li>
             <li>
-                <a href="idk"><img src="images/social icons/instagram-con.avif" alt="instagram-icon"></a>
+                <img src="images/social-icons/instagram-logo.svg" alt="instagram-icon">
             </li>
             <li>
-                <a href="idk"><img src="images/social icons/Twitter-icon.webp" alt="twitter icon"></a>
+                <img src="images/social-icons/Twitter-icon.webp" alt="twitter icon">
             </li>
             <li>
-                <a href="idk"><img src="images/social icons/youtube-icon.png" alt="youtube icon"></a>
+                <img src="images/social-icons/youtube-icon.png" alt="youtube icon">
             </li>
         </ul>
+        <div>
+            <img src="images/random-icons/comment-icon.png" alt="comment-icon">
+        </div>
     </footer>
 
+    <script defer src="scripts/script.js"></script>
 </body>
 
 </html>

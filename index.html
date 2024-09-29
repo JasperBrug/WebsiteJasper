@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="nl">
-<style>
-	@import url("https://use.typekit.net/baj3nfb.css");
-</style>
+
 
 <head>
+	<style>
+		@import url("https://use.typekit.net/baj3nfb.css");
+	</style>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>Rabobank</title>
-
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-
 </head>
 
 <body>
 	<header>
-		<section>
+		<nav>
 			<ul>
 				<li>
 					<a class="bold" href="idk">particulieren</a>
@@ -27,11 +24,16 @@
 					<a href="idk">Bedrijven</a>
 				</li>
 			</ul>
-		</section>
-		<img src="images/Rabobank-text-logo.png" alt="Rabobank logo">
-
+		</nav>
 		<nav>
-			<ul>
+			<a href="index.html">
+				<img src="images/Rabobank-text-logo.png" alt="Rabobank logo">
+			</a>
+
+
+			<button type="button"><img id="hamburger-icon" src="./images/random-icons/hamburger.svg"
+					alt="hamburger-icoon"></button>
+			<ul id="menuList">
 				<li>
 					<a href="idk">producten</a>
 				</li>
@@ -47,58 +49,87 @@
 
 			</ul>
 		</nav>
-		<img class="Headerimg" src="images/headerplaatje-home.avif" alt="achtergrond afbeelding header">
-
-		<article>
-			<h1>
-				Betaal met je smartphone of - watch
-			</h1>
-			<h2>
-				Een snelle en veilige manier van betalen
-			</h2>
-			<button>
-				<a href="idk">Betaal contactloos zonder pincode</a>
-			</button>
-
-
-		</article>
+		<section>
+			<article>
+				<h1>
+					Betaal met je smartphone of - watch
+				</h1>
+				<h2>
+					Een snelle en veilige manier van betalen
+				</h2>
+				<button>
+					Betaal contactloos zonder pincode
+				</button>
+			</article>
+		</section>
 	</header>
 	<main>
 		<section>
 			<h2>
 				Waarmee kunnen we je helpen?
 			</h2>
-			<ul>
+			<ul class="infohypotheek">
 				<li>
-					<h3>
-						<a href="idk">online bankieren</a>
-					</h3>
+					<a href="idk">
+						<!-- <h3> -->
+						online bankieren
+						<!-- </h3> -->
+					</a>
 				</li>
-			</ul>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Betalen
+						<!-- </h3> -->
+					</a>
+				</li>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Verzekeren
+						<!-- </h3> -->
+					</a>
+				</li>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Hypotheken
+						<!-- </h3> -->
+					</a>
+				</li>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Lenen
+						<!-- </h3> -->
+					</a>
+				</li>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Sparen
+						<!-- </h3> -->
+					</a>
+				</li>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Beleggen
+						<!-- </h3> -->
+					</a>
+				</li>
+				<li>
+					<a href="idk">
+						<!-- <h3> -->
+						Pension
+						<!-- </h3> -->
+					</a>
+				</li>
 
-			<h3>
-				<a href="idk">betalen</a>
-			</h3>
-			<h3>
-				<a href="idk">verzekeren</a>
-			</h3>
-			<h3>
-				<a href="idk">hypotheken</a>
-			</h3>
-			<h3>
-				<a href="idk">lenen</a>
-			</h3>
-			<h3>
-				<a href="idk">sparen</a>
-			</h3>
-			<h3>
-				<a href="idk">beleggen</a>
-			</h3>
-			<h3>
-				<a href="idk">pensioen</a>
-			</h3>
+
+			</ul>
 		</section>
-		<article>
+		<article id="actueel">
 			<h2>
 				actueel
 			</h2>
@@ -127,35 +158,62 @@
 			<a href="idk">Meer nieuws</a>
 
 		</article>
+	</main>
+	<footer>
 		<article>
 			<h2>
 				Waar ben je naar op zoek?
 			</h2>
-			<p>
-				Bijv. betaalpas activeren
-			</p>
-			<section>
-				<a href="idk">Financieel Jaaroverzicht</a>
-				<a href="idk">Je creditcard activeren</a>
-				<a href="idk">De limiet van je betaalpas wijzigen</a>
-				<a href="idk">Je betaalpas activeren</a>
-				<a href="idk">contant geld opnemen en storten</a>
-				<a href="idk">Meer service...</a>
-			</section>
+			<button>
+				<img src="images/random-icons/search-icon.svg" alt="search icon">
+					Bijv. betaalpas activeren
+
+			</button>
+			<ul>
+				<li>
+					<a href="idk">Financieel Jaaroverzicht</a>
+				</li>
+				<li>
+					<a href="idk">Je creditcard activeren</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="idk">De limiet van je betaalpas wijzigen</a>
+				</li>
+				<li>
+					<a href="idk">Je betaalpas activeren</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="idk">contant geld opnemen en storten</a>
+				</li>
+				<li>
+					<a href="idk">Meer service...</a>
+				</li>
+			</ul>
+
 		</article>
-		<h2>
-			Growing a Better World Together
-		</h2>
-		<p>
-			Samen werken aan een betere wereld, dat is wat
-			de Rabobank zich tot doel stelt. Dat doen we niet alleen,
-			maar dat doen we samen. Met jou,
-		</p>
-		<a href="idk">Meer over ons</a>
-		<img src="images/afb-groot-homepage.jpeg" alt="Afbeelding achtergrond">
-		<script defer src="scripts/script.js"></script>
-	</main>
-	<footer>
+		<article>
+			<section id="article-index">
+			<h2>
+				Growing a Better World Together
+			</h2>
+			<p>
+				Samen werken aan een betere wereld, dat is wat
+				de Rabobank zich tot doel stelt. Dat doen we niet alleen,
+				maar dat doen we samen. Met jou,
+			</p>
+			<button>
+				Meer over ons
+			</button>
+		</section>
+		
+		<img id="fotofooter" src="images/afb-groot-homepage.jpeg" alt="Afbeelding achtergrond">
+	</article>
+
+
 		<nav>
 			<ul>
 				<li>
@@ -174,19 +232,24 @@
 		</nav>
 		<ul class="socialmedia">
 			<li>
-				<a href="idk"><img src="images/social icons/facebook-icon.jpeg" alt="Facebook-icon"></a>
+				<img src="images/social-icons/facebook-icon.jpeg" alt="Facebook-icon">
 			</li>
 			<li>
-				<a href="idk"><img src="images/social icons/insta-icon.png" alt="instagram-icon"></a>
+				<img src="images/social-icons/insta-icon.png" alt="instagram-icon">
 			</li>
 			<li>
-				<a href="idk"><img src="images/social icons/Twitter-icon.webp" alt="twitter icon"></a>
+				<img src="images/social-icons/Twitter-icon.webp" alt="twitter icon">
 			</li>
 			<li>
-				<a href="idk"><img src="images/social icons/youtube-icon.png" alt="youtube icon"></a>
+				<img src="images/social-icons/youtube-icon.png" alt="youtube icon">
 			</li>
 		</ul>
+		<div>
+			<img src="images/random-icons/comment-icon.png" alt="comment-icon">
+		</div>
+		<script defer src="scripts/script.js"></script>
 	</footer>
+
 </body>
 
 </html>
