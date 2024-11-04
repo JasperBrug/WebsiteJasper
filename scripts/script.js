@@ -10,6 +10,7 @@ function hamburger() {
         hamburgerIcon.src = './images/random-icons/hamburger.svg';
     }
 }
+
  
 hamburgerIcon.addEventListener("click", hamburger);
 

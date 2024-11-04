@@ -216,7 +216,7 @@ header article:hover{
 
 	header section {
 		padding-top: 5rem;
-		background-image: url("/images/headerplaatje-home.avif");
+		background-image: url("images/headerplaatje-home.avif");
 		background-size: cover;
 		background-position: center;
 		height: 50vh;
@@ -322,41 +322,50 @@ main article h2{
 	padding: 0px 12px;
 }
 
-main #actueel ul{
+ #actueel ul{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 3em;
 }
 
 
-main #actueel ul li{
-	height: 8rem;
+#actueel ul li{
+	height: auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	flex-basis: 13em;
 	color: var(--heading);
 	font-style: italic;
 }
+#actueel ul li img{
+	height: 100%;
+	object-fit: cover;
+}
 
 
-main #actueel ul  h3{
+#actueel ul  h3{
 	font-weight: 100;
 	height: 139px;
 	
 }
 
-@media(min-width: 575px){
-	main article ul{
-		display: inline-block;
-		/* display: flex; */
-		/* justify-content: space-between; */
+@media(min-width: 535px){
+	#actueel ul{
+		 display: flex; 
+		 gap: 1em;
 	}
-	main article ul li{
+	#actueel ul li{
 		display: flex;
 		flex-direction: column;
-		font-size: 0.5em;
+		font-size: 1em;
 		box-shadow: #c3c3c3 0px -1px 3px ;
 		width: 100%;
+		flex-basis: 20em;
+		
+	}
+	#actueel ul li h3{
+		padding: 1em;
 	}
 	
 }
@@ -460,10 +469,14 @@ main p{
 
 
 .infohypotheek{
-	gap: 10px;
 	padding: 1em;
 }
 
+.infohypotheek li img{
+	height: 4em;
+	width: 4em;
+	padding-left: 1em;
+}
 
 
 @media(min-width: 994px){
@@ -477,17 +490,19 @@ main p{
 }
 
 .infohypotheek li {
+	display: flex;
+	align-items: center;
 	border-radius: 5px;
 	font-weight: 100;
 	font-size: 10px;
-	/* margin-right: 1em; */
 	width: 100%;
 	box-shadow: #c3c3c3 0px -1px 3px ;
+	margin-bottom: 0.8em;
 }
 
 .infohypotheek li a {
 	font-size: 1.2rem;
-	padding: 2rem;
+	padding: 1rem;
 	display: block;
 	transition: .5s;
 }
@@ -767,12 +782,12 @@ footer article button{
 	color: #515151;
 	padding: 0;
 	width: 100%;
-	border-radius: 1em;
+	height: 3em;
+	border-radius: 0.5em;
 	
 }
 
 footer article button p{
-	padding: 0;
 	margin-left: 1em;
 }
 footer article button img{
@@ -785,6 +800,18 @@ footer article ul li{
 	gap: 4em;
 	
 }
+footer article ul li img{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+@media(min-width: 768px){
+	footer article ul{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+	}
+}
+
 .Hulp{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -828,10 +855,11 @@ footer div{
 	justify-content: flex-end;
 }
 footer div img{
-	width: 80px;
-	height: 80px;
-	margin-right: 1em;
-	margin-bottom: 1em;
+	position: fixed;
+	width: 4em;
+	height: 4em;
+	bottom: 0;
+	right: 0;
 }
 #fotofooter{
 	position: relative;
